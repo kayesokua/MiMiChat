@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		68F431C627D4EBA9004E63AC /* MiMiChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F431C527D4EBA9004E63AC /* MiMiChatApp.swift */; };
-		68F431C827D4EBA9004E63AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F431C727D4EBA9004E63AC /* ContentView.swift */; };
 		68F431CA27D4EBAB004E63AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F431C927D4EBAB004E63AC /* Assets.xcassets */; };
 		68F431CD27D4EBAB004E63AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F431CC27D4EBAB004E63AC /* Preview Assets.xcassets */; };
+		68F431D427D4EC2D004E63AC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F431D327D4EC2D004E63AC /* LoginView.swift */; };
+		68F431D627D4ECA2004E63AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68F431D527D4ECA2004E63AC /* GoogleService-Info.plist */; };
+		68F431D827D4ECB5004E63AC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F431D727D4ECB5004E63AC /* ImagePicker.swift */; };
+		68F431E027D504C8004E63AC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 68F431DF27D504C8004E63AC /* FirebaseAuth */; };
+		68F431E227D504C8004E63AC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 68F431E127D504C8004E63AC /* FirebaseFirestore */; };
+		68F431E427D504C8004E63AC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 68F431E327D504C8004E63AC /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		68F431C227D4EBA9004E63AC /* MiMiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiMiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F431C527D4EBA9004E63AC /* MiMiChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiMiChatApp.swift; sourceTree = "<group>"; };
-		68F431C727D4EBA9004E63AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68F431C927D4EBAB004E63AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68F431CC27D4EBAB004E63AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68F431D327D4EC2D004E63AC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		68F431D527D4ECA2004E63AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68F431D727D4ECB5004E63AC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F431E027D504C8004E63AC /* FirebaseAuth in Frameworks */,
+				68F431E227D504C8004E63AC /* FirebaseFirestore in Frameworks */,
+				68F431E427D504C8004E63AC /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				68F431C527D4EBA9004E63AC /* MiMiChatApp.swift */,
-				68F431C727D4EBA9004E63AC /* ContentView.swift */,
+				68F431D327D4EC2D004E63AC /* LoginView.swift */,
+				68F431D727D4ECB5004E63AC /* ImagePicker.swift */,
+				68F431D527D4ECA2004E63AC /* GoogleService-Info.plist */,
 				68F431C927D4EBAB004E63AC /* Assets.xcassets */,
 				68F431CB27D4EBAB004E63AC /* Preview Content */,
 			);
@@ -83,6 +95,11 @@
 			dependencies = (
 			);
 			name = MiMiChat;
+			packageProductDependencies = (
+				68F431DF27D504C8004E63AC /* FirebaseAuth */,
+				68F431E127D504C8004E63AC /* FirebaseFirestore */,
+				68F431E327D504C8004E63AC /* FirebaseStorage */,
+			);
 			productName = MiMiChat;
 			productReference = 68F431C227D4EBA9004E63AC /* MiMiChat.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 68F431B927D4EBA9004E63AC;
+			packageReferences = (
+				68F431DE27D504C8004E63AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 68F431C327D4EBA9004E63AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +147,7 @@
 			files = (
 				68F431CD27D4EBAB004E63AC /* Preview Assets.xcassets in Resources */,
 				68F431CA27D4EBAB004E63AC /* Assets.xcassets in Resources */,
+				68F431D627D4ECA2004E63AC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F431C827D4EBA9004E63AC /* ContentView.swift in Sources */,
+				68F431D827D4ECB5004E63AC /* ImagePicker.swift in Sources */,
+				68F431D427D4EC2D004E63AC /* LoginView.swift in Sources */,
 				68F431C627D4EBA9004E63AC /* MiMiChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +361,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68F431DE27D504C8004E63AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68F431DF27D504C8004E63AC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F431DE27D504C8004E63AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		68F431E127D504C8004E63AC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F431DE27D504C8004E63AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		68F431E327D504C8004E63AC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F431DE27D504C8004E63AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68F431BA27D4EBA9004E63AC /* Project object */;
 }

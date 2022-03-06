@@ -11,7 +11,7 @@ import SwiftUI
 struct MiMiChatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
