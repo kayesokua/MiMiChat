@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4F798219-13F9-419A-984B-9D3F27E50732"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B62C798-A905-47E8-8B0A-D045AF27CE6E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiMiChat/MainMessages/MainMessagesView.swift"
+            startingColumnNumber = "17"
+            endingColumnNumber = "17"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "fetchRecentMessages()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
